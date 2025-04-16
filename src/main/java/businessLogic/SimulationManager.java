@@ -19,7 +19,6 @@ public class SimulationManager implements Runnable {
     public int minArrivalTime;
     public SelectionPolicy selectionPolicy;
     private final String outputFile;
-    private int peakTime;
     private int maxServerTask = 0;
 
 
@@ -58,20 +57,7 @@ public class SimulationManager implements Runnable {
         }
         Collections.sort(generatedTasks, Comparator.comparingInt(Task::getArrivalTime));
     }
-    /*
-        private int computePeakTime(int maxServerTasks, int currentTime) {
-            int serverTasks = 0;
-            for(Server server : scheduler.getServers()) {
-                serverTasks += server.getTasks().size();
-            }
 
-            if(serverTasks > maxServerTasks) {
-                maxServerTasks = serverTasks;
-                peakTime = currentTime;
-            }
-            return maxServerTasks;
-        }
-    */
     public void run() {
 
         try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(outputFile))) {
@@ -117,9 +103,6 @@ public class SimulationManager implements Runnable {
                 fileWriter.flush();
                 printQueues(scheduler, fileWriter);
 
-
-
-
                 try {
                     Thread.sleep(1500);
                 } catch (InterruptedException e) {
@@ -142,10 +125,8 @@ public class SimulationManager implements Runnable {
     private void printQueues(Scheduler scheduler, BufferedWriter fileWriter) throws IOException {
 
         int queueIndex = 1;
-        StringBuilder output = new StringBuilder();
 
         for (Server server : scheduler.getServers()) {
-            Task currentTask = server.getCurrentTask();
             List<Task> currentServerTasks = server.getTasksAsList();
 
             fileWriter.write("Queue " + queueIndex + ": ");
