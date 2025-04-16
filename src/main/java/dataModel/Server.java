@@ -1,5 +1,7 @@
 package dataModel;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -56,6 +58,10 @@ public class Server implements Runnable {
         break;
       }
     }
+  }
+
+  public List<Task> getTasksAsList() {
+    return new ArrayList<>(tasks);
   }
 
   public BlockingQueue<Task> getTasks() {

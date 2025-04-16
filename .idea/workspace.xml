@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9b6030-b77e-49b2-96bd-f5a9def020ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/businessLogic/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/businessLogic/SelectionPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/businessLogic/ShortestQueueStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/businessLogic/SimulationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/businessLogic/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/businessLogic/TimeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataModel/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataModel/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphicalUserInterface/SimulationFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test_gui.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/businessLogic/SimulationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLogic/SimulationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataModel/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataModel/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphicalUserInterface/SimulationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphicalUserInterface/SimulationFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Run.executor": "Run",
-    "Application.SimulationManager.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Run.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SimulationFrame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SimulationManager.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Run">
     <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="businessLogic.SimulationManager" />
       <module name="PT2025_30422_Turc_Ariana_Assignment_2" />
@@ -74,6 +71,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimulationFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graphicalUserInterface.SimulationFrame" />
+      <module name="PT2025_30422_Turc_Ariana_Assignment_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graphicalUserInterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SimulationFrame" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -104,7 +119,10 @@
       <workItem from="1744623256569" duration="2739000" />
       <workItem from="1744628455163" duration="1549000" />
       <workItem from="1744630027947" duration="33000" />
-      <workItem from="1744630076821" duration="12660000" />
+      <workItem from="1744630076821" duration="14772000" />
+      <workItem from="1744731008068" duration="14975000" />
+      <workItem from="1744746121738" duration="114000" />
+      <workItem from="1744794119250" duration="5324000" />
     </task>
     <servers />
   </component>
