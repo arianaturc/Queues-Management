@@ -23,7 +23,6 @@ public class SimulationManager implements Runnable {
 
 
     private Scheduler scheduler;
-    private SimulationFrame frame;
     private List<Task> generatedTasks;
 
     public SimulationManager(int numberOfClients, int numberOfServers, int timeLimit,
@@ -50,23 +49,25 @@ public class SimulationManager implements Runnable {
         Random rand = new Random();
 
         for (int i = 0; i < numberOfClients; i++) {
-            int arrivalTime = minArrivalTime + rand.nextInt(maxArrivalTime - minArrivalTime + 1);
-            int processingTime = minProcessingTime + rand.nextInt(maxProcessingTime - minProcessingTime + 1);
+            int arrivalTime = rand.nextInt(minArrivalTime, maxArrivalTime);
+            int processingTime = rand.nextInt(minProcessingTime, maxProcessingTime);
             Task task = new Task(i + 1, arrivalTime, processingTime);
             generatedTasks.add(task);
         }
         Collections.sort(generatedTasks, Comparator.comparingInt(Task::getArrivalTime));
     }
 
+    @Override
     public void run() {
 
         try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(outputFile))) {
             int currentTime = 0;
-            int serviceTime = 0, totalWaitingTime = 0;
+            int serviceTime = 0;
+            int totalWaitingTime = 0;
             int count = 0;
             int peakTime = 0;
 
-            while (currentTime < timeLimit) {
+            while (currentTime <= timeLimit) {
                 List<Task> tasksToDispatch = new ArrayList<>();
                 List<Task> genTasks = new ArrayList<>(generatedTasks);
 
@@ -111,9 +112,11 @@ public class SimulationManager implements Runnable {
                 }
                 currentTime++;
             }
+
+
             fileWriter.write("Simulation finished!\n");
-            fileWriter.write("Average waiting time: " + ((double) totalWaitingTime / count) + "\n");
-            fileWriter.write("Average service time: " + ((double) serviceTime / count) + "\n");
+            fileWriter.write(String.format("Average waiting time: %.2f\n", ((float) totalWaitingTime / count)));
+            fileWriter.write(String.format("Average service time: %.2f\n", ((float) serviceTime / count)));
             fileWriter.write("Peak time: " + peakTime + "\n");
 
         } catch (IOException e) {

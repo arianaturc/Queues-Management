@@ -110,7 +110,7 @@ public class SimulationFrame {
             int maxProcessing = Integer.parseInt(tfMaxProcessing.getText());
             SelectionPolicy policy = cbSelectionPolicy.getValue();
 
-            String outputPath = "test_gui.txt";
+            String outputPath = "C:\\Users\\arian\\Documents\\an2_utcn\\sem2\\fpt\\PT2025_30422_Turc_Ariana_Assignment_2\\src\\main\\java\\test_gui.txt";
 
             simulationOutputArea.clear();
 
