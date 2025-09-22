@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9b6030-b77e-49b2-96bd-f5a9def020ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PackageDiagram.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classDiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packageDiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/useCaseDiagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ClassDiagram.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/businessLogic/SimulationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/businessLogic/SimulationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_gui.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_gui.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataModel/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataModel/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataModel/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataModel/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test_gui.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test_gui.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +120,17 @@
       <workItem from="1744794119250" duration="5697000" />
       <workItem from="1744801558367" duration="3637000" />
       <workItem from="1744809034375" duration="5331000" />
-      <workItem from="1744829798945" duration="3219000" />
+      <workItem from="1744829798945" duration="3977000" />
+      <workItem from="1744873649420" duration="290000" />
+      <workItem from="1747057572963" duration="273000" />
+      <workItem from="1747153972879" duration="546000" />
+      <workItem from="1748102052786" duration="2047000" />
+      <workItem from="1748160141984" duration="10078000" />
+      <workItem from="1748355793172" duration="22000" />
+      <workItem from="1748412026247" duration="61000" />
+      <workItem from="1748438032922" duration="10000" />
+      <workItem from="1749661853491" duration="28000" />
+      <workItem from="1758548753307" duration="699000" />
     </task>
     <servers />
   </component>

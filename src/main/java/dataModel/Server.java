@@ -44,7 +44,7 @@ public class Server implements Runnable {
         if(remainingServiceTime == 0) {
           tasks.take();
         }
-        else{
+        else {
           remainingServiceTime--;
           currentTask.setServiceTime(remainingServiceTime);
           waitingPeriod.decrementAndGet();
