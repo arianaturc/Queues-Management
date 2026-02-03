@@ -1,4 +1,4 @@
-#  Queues Management Application (Java, OOP, JavaFX, Threads)
+# ⟳ Queues Management Application (Java, OOP, JavaFX, Threads)
 
 ##  Overview
 This project is a **Queues Management Application** built in Java for the **Fundamental Programming Techniques** course (2025, Technical University of Cluj-Napoca).  
