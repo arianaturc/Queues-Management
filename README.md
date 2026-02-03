@@ -1,4 +1,4 @@
-# 🧵 Queues Management Application (Java, OOP, JavaFX, Threads)
+#  Queues Management Application (Java, OOP, JavaFX, Threads)
 
 ## 📖 Overview
 This project is a **Queues Management Application** built in Java for the **Fundamental Programming Techniques** course (2025, Technical University of Cluj-Napoca).  
@@ -14,27 +14,27 @@ The system applies:
 
 ---
 
-## 👩‍💻 Features
-- ✔️ **Client Simulation**: Randomly generated clients with:  
+##  Features
+-  **Client Simulation**: Randomly generated clients with:  
   - ID  
   - Arrival time  
   - Service time  
-- ✔️ **Queue Management**:  
+-  **Queue Management**:  
   - Multiple queues processed in parallel threads  
   - Assign clients dynamically to minimize waiting time  
-- ✔️ **Scheduling Strategies**:  
+-  **Scheduling Strategies**:  
   - **Shortest Queue** → assigns to the queue with fewer clients  
   - **Shortest Time** → assigns to the queue with the lowest waiting time  
-- ✔️ **Logging & Statistics**:  
+-  **Logging & Statistics**:  
   - Event log saved to `.txt`  
   - Average waiting time  
   - Average service time  
   - Peak time (time with maximum load)  
-- ✔️ **GUI**: Configure parameters and watch the simulation in real time.  
+-  **GUI**: Configure parameters and watch the simulation in real time.  
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ### Core Classes
 - **Task** → Represents a client with ID, arrival time, service time, and waiting time.  
@@ -57,7 +57,7 @@ The **JavaFX interface** allows the user to:
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 - **Language**: Java (OOP, concurrency, synchronization)  
 - **Concurrency**: Threads, BlockingQueue, AtomicInteger  
 - **GUI**: JavaFX  
